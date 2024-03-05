@@ -2036,6 +2036,14 @@
   dependencies:
     "@sinonjs/commons" "^3.0.0"
 
+"@storybook/addon-a11y@^7.6.17":
+  version "7.6.17"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-7.6.17.tgz#77209c23b6908d52dc470a3318d76a0ffe9d47cb"
+  integrity sha512-UYHJAKQpJMCu4X4O/325UqozYrkhPn2VyQdwPgC+uiOKZvrtni4uRbpOspeyjC0wXH1tDbY8WZvxwvwQryYkpA==
+  dependencies:
+    "@storybook/addon-highlight" "7.6.17"
+    axe-core "^4.2.0"
+
 "@storybook/addon-actions@7.6.6":
   version "7.6.6"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-7.6.6.tgz#37b183af6303db8b44a7d9e9620aaca991a51a62"
@@ -2110,6 +2118,13 @@
     "@storybook/node-logger" "7.6.6"
     "@storybook/preview-api" "7.6.6"
     ts-dedent "^2.0.0"
+
+"@storybook/addon-highlight@7.6.17":
+  version "7.6.17"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-highlight/-/addon-highlight-7.6.17.tgz#6d8549aa95eb007888f4d272e9ab7316cbcc001c"
+  integrity sha512-R1yBPUUqGn+60aJakn8q+5Zt34E/gU3n3VmgPdryP0LJUdZ5q1/RZShoVDV+yYQ40htMH6oaCv3OyyPzFAGJ6A==
+  dependencies:
+    "@storybook/global" "^5.0.0"
 
 "@storybook/addon-highlight@7.6.6":
   version "7.6.6"
@@ -3135,6 +3150,11 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
   integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
 
+"@types/junit-report-builder@^3.0.0":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@types/junit-report-builder/-/junit-report-builder-3.0.2.tgz#17cc131d14ceff59dcf14e5847bd971b96f2cbe0"
+  integrity sha512-R5M+SYhMbwBeQcNXYWNCZkl09vkVfAtcPIaCGdzIkkbeaTrVbGQ7HVgi4s+EmM/M1K4ZuWQH0jGcvMvNePfxYA==
+
 "@types/lodash@^4.14.167":
   version "4.14.202"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.202.tgz#f09dbd2fb082d507178b2f2a5c7e74bd72ff98f8"
@@ -3732,6 +3752,30 @@ available-typed-arrays@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
+
+axe-core@^4.2.0, axe-core@^4.5.1:
+  version "4.8.4"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.8.4.tgz#90db39a2b316f963f00196434d964e6e23648643"
+  integrity sha512-CZLSKisu/bhJ2awW4kJndluz2HLZYIHh5Uy1+ZwDRkJi69811xgIXXfdU9HSLX0Th+ILrHj8qfL/5wzamsFtQg==
+
+axe-html-reporter@2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/axe-html-reporter/-/axe-html-reporter-2.2.3.tgz#2d56e239fe9bd1f09ba0735d94596bf79dd389a7"
+  integrity sha512-io8aCEt4fJvv43W+33n3zEa8rdplH5Ti2v5fOnth3GBKLhLHarNs7jj46xGfpnGnpaNrz23/tXPHC3HbwTzwwA==
+  dependencies:
+    mustache "^4.0.1"
+    rimraf "^3.0.2"
+
+axe-playwright@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/axe-playwright/-/axe-playwright-2.0.1.tgz#c474be6b7f3826e6a4cd1955ef006e33e4a145b9"
+  integrity sha512-MHjNjGARulF9XzqSfspmNjw+tpBz4x9o1VlTuLWEUW9fqzhn+xWa1qEpuOIQPbsRWQiLfooDjQAunLeE0PM5AQ==
+  dependencies:
+    "@types/junit-report-builder" "^3.0.0"
+    axe-core "^4.5.1"
+    axe-html-reporter "2.2.3"
+    junit-report-builder "^3.0.1"
+    picocolors "^1.0.0"
 
 axios@^1.6.1:
   version "1.6.7"
@@ -4382,6 +4426,11 @@ cwd@^0.10.0:
   dependencies:
     find-pkg "^0.1.2"
     fs-exists-sync "^0.1.0"
+
+date-format@4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/date-format/-/date-format-4.0.3.tgz#f63de5dc08dc02efd8ef32bf2a6918e486f35873"
+  integrity sha512-7P3FyqDcfeznLZp2b+OMitV9Sz2lUnsT87WaTat9nVwqsBkTzPG3lPLNwW3en6F4pHUiWzr6vb8CLhjdK9bcxQ==
 
 debug@2.6.9, debug@^2.6.9:
   version "2.6.9"
@@ -6892,6 +6941,16 @@ jsonfile@^6.0.1:
     object.assign "^4.1.4"
     object.values "^1.1.6"
 
+junit-report-builder@^3.0.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/junit-report-builder/-/junit-report-builder-3.2.1.tgz#93067512353c3d47d2dd5913e695b32d3262096c"
+  integrity sha512-IMCp5XyDQ4YESDE4Za7im3buM0/7cMnRfe17k2X8B05FnUl9vqnaliX6cgOEmPIeWKfJrEe/gANRq/XgqttCqQ==
+  dependencies:
+    date-format "4.0.3"
+    lodash "^4.17.21"
+    make-dir "^3.1.0"
+    xmlbuilder "^15.1.1"
+
 keyv@^4.5.3:
   version "4.5.4"
   resolved "https://registry.yarnpkg.com/keyv/-/keyv-4.5.4.tgz#a879a99e29452f942439f2a405e3af8b31d4de93"
@@ -7046,7 +7105,7 @@ make-dir@^2.0.0, make-dir@^2.1.0:
     pify "^4.0.1"
     semver "^5.6.0"
 
-make-dir@^3.0.0, make-dir@^3.0.2:
+make-dir@^3.0.0, make-dir@^3.0.2, make-dir@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-3.1.0.tgz#415e967046b3a7f1d185277d84aa58203726a13f"
   integrity sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==
@@ -7280,6 +7339,11 @@ msw@^1.2.1:
     strict-event-emitter "^0.4.3"
     type-fest "^2.19.0"
     yargs "^17.3.1"
+
+mustache@^4.0.1:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/mustache/-/mustache-4.2.0.tgz#e5892324d60a12ec9c2a73359edca52972bf6f64"
+  integrity sha512-71ippSywq5Yb7/tVYyGbkBggbU8H3u5Rz56fH60jGFgr8uHwxs+aSKeqmluIVzM0m0kB7xQjKS6qPfd0b2ZoqQ==
 
 mute-stream@0.0.8:
   version "0.0.8"
@@ -9499,6 +9563,11 @@ xml@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/xml/-/xml-1.0.1.tgz#78ba72020029c5bc87b8a81a3cfcd74b4a2fc1e5"
   integrity sha512-huCv9IH9Tcf95zuYCsQraZtWnJvBtLVE0QHMOs8bWyZAFZNDcYjsPq1nEx8jKA9y+Beo9v+7OBPRisQTjinQMw==
+
+xmlbuilder@^15.1.1:
+  version "15.1.1"
+  resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-15.1.1.tgz#9dcdce49eea66d8d10b42cae94a79c3c8d0c2ec5"
+  integrity sha512-yMqGBqtXyeN1e3TGYvgNgDVZ3j84W4cwkOXQswghol6APgZWaff9lnbvN7MHYJOiXsvGPXtjTYJEiC9J2wv9Eg==
 
 xtend@~4.0.1:
   version "4.0.2"
